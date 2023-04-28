@@ -7,6 +7,6 @@ def main(request, response):
     except:
         response.set_error(400, "Invalid parameter")
 
-    time.sleep(int(delay))
+    time.sleep(delay)
 
     return "window.newfunction = function () { log('run');};"
